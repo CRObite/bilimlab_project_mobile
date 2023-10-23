@@ -1,4 +1,4 @@
-import 'package:bilimlab_project_mobile/presentation/application.dart';
+import 'package:bilimlab_project_mobile/presentation/AuthorizationPages/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
@@ -30,7 +30,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Application(),
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
     );
   }
 }
