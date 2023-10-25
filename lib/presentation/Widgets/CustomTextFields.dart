@@ -1,3 +1,4 @@
+import 'package:bilimlab_project_mobile/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
@@ -23,16 +24,17 @@ class _CustomTextFieldState extends State<CustomTextField> {
       keyboardType: widget.suffix == true ?  TextInputType.visiblePassword: TextInputType.emailAddress,
       controller: widget.controller,
       obscureText: widget.suffix == true ? !_passwordVisible: false,
-      style: const TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         hintText: widget.title,
-        hintStyle: const TextStyle(color: Colors.white),
+        hintStyle: TextStyle(color: AppColors.colorTextFiledStoke),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: AppColors.colorTextFiledStoke),
           borderRadius: BorderRadius.circular(10.0),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: AppColors.colorButton),
           borderRadius: BorderRadius.circular(10.0),
         ),
 
@@ -44,7 +46,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           },
           icon: Icon(
             _passwordVisible ? Icons.visibility : Icons.visibility_off,
-            color: Colors.white,
+            color: AppColors.colorTextFiledStoke,
           ),
         ): null,
       ),

@@ -5,4 +5,7 @@ class AppText {
   static String password = 'Құпиясөз';
   static String forgotPassword = 'Құпиясөзді ұмыттыңыз ба?';
   static String enter = 'Кіру';
+
+  static String setNewPassword = 'Жаңа құпиясөз орнату';
+  static String send = 'Жіберу';
 }

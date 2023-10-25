@@ -1,4 +1,4 @@
-import 'package:bilimlab_project_mobile/presentation/AuthorizationPages/LoginPage.dart';
+import 'package:bilimlab_project_mobile/domain/AppNavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
@@ -29,9 +29,10 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      title: 'Bilim-Lab_Mobile',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      routerConfig: AppNavigation.router,
     );
   }
 }
